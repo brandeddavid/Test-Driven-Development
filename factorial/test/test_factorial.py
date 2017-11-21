@@ -26,3 +26,12 @@ class Testfibonacci(unittest.TestCase):
 
         result = factorial.factorial(0)
         self.assertEqual(1, result)
+
+    def test_factorial_method_with_negative_input(self):
+
+        """
+        Method tests factorial funcion with negative integer input
+        """
+
+        result = factorial.factorial(-4)
+        self.assertRaises(RecursionError)

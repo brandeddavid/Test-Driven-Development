@@ -35,3 +35,8 @@ class Testfibonacci(unittest.TestCase):
 
         result = factorial.factorial(-4)
         self.assertRaises(RecursionError)
+
+    def test_factorial_method_for_non_integers(self):
+
+        result = factorial.factorial('Hello')
+        self.assertRaises(TypeError, result)

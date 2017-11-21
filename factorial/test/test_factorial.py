@@ -33,10 +33,8 @@ class Testfibonacci(unittest.TestCase):
         Method tests factorial funcion with negative integer input
         """
 
-        result = factorial.factorial(-4)
-        self.assertRaises(RecursionError)
+        self.assertRaises(RecursionError, factorial.factorial, -4)
 
     def test_factorial_method_for_non_integers(self):
 
-        result = factorial.factorial('Hello')
-        self.assertRaises(TypeError, result)
+        self.assertRaises(TypeError, factorial.factorial, 'Hello')

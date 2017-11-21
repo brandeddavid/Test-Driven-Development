@@ -38,3 +38,12 @@ class Testfibonacci(unittest.TestCase):
     def test_factorial_method_for_non_integers(self):
 
         self.assertRaises(TypeError, factorial.factorial, 'Hello')
+
+    def test_factorial_for_number_with_leading_plus_sign(self):
+
+        result = factorial.factorial(+5)
+        self.assertEqual(120,result)
+
+    def test_factorial_for_number_with_leading_0(self):
+
+        self.assertRaises(SyntaxError, factorial.factorial, 07)

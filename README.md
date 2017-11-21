@@ -9,4 +9,4 @@ This Repo is for Andela Bootcamp day 2 [Output Learning map Outcome 5](https://d
 > GitHub repository with at least 10 test cases for one of factorial, Fibonacci
 or FizzBuzz function.
 
-Function selected is [factorial](https://github.com/brandeddavid/Test-Driven-Development/blob/master/factorial/fact/factorial.py)
+Function selected is [factorial](https://github.com/brandeddavid/Test-Driven-Development/blob/master/factorial/factorial.py)

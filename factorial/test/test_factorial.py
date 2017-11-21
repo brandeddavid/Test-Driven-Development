@@ -43,7 +43,17 @@ class Testfibonacci(unittest.TestCase):
 
         result = factorial.factorial(+5)
         self.assertEqual(120,result)
-
+    """
     def test_factorial_for_number_with_leading_0(self):
 
         self.assertRaises(SyntaxError, factorial.factorial, 07)
+
+    """
+
+    def test_factorial_method_with_floats(self):
+
+        """
+        Method tests factorial funcion with floats
+        """
+
+        self.assertRaises(RecursionError, factorial.factorial, 1.1)

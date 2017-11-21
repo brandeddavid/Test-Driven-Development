@@ -1,7 +1,10 @@
 def factorial(n):
-    if type(n) != int or type(n) != float:
+    if type(n) != int:
 
         raise TypeError
+    elif type(n) == float:
+
+        raise RecursionError
 
     elif: n < 0:
 
